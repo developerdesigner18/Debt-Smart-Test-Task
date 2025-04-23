@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -30,6 +31,9 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
+        fonts: [
+          `NotoRashiHebrew:300,400,700`,
+        ],
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
